@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 350" width="840" height="350" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 460" width="840" height="460" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
   <title>The lscs-devsecops session loop</title>
-  <desc>start, work the ticket, pr proposal (your OK), team review, merge (your OK), close, end, then back to start next session. Changes requested or a failed criterion go back to work; a PR waiting on review carries over to the next session.</desc>
+  <desc>start, work the ticket, pr proposal (your OK), team review, merge (your OK), close, end, then back to start next session. Changes requested or a failed criterion go back to work; a PR waiting on review carries over to the next session. Teammates' PRs: review drafts reviews in parallel, you post them and click Approve, and new commits get a delta review at the next start.</desc>
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
@@ -18,7 +18,7 @@
     .ln { stroke: #57606a; stroke-width: 1.6; fill: none; marker-end: url(#a); }
   </style>
 
-  <rect x="0.5" y="0.5" width="839" height="349" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="0.5" y="0.5" width="839" height="459" rx="12" fill="#ffffff" stroke="#d0d7de"/>
 
   <!-- top row, left to right -->
   <rect class="cmd" x="40" y="40" width="160" height="64" rx="10"/>
@@ -27,7 +27,7 @@
 
   <rect class="act" x="240" y="40" width="160" height="64" rx="10"/>
   <text class="t" x="320" y="66" text-anchor="middle">Work the ticket</text>
-  <text class="s" x="320" y="85" text-anchor="middle">draft · test locally</text>
+  <text class="s" x="320" y="85" text-anchor="middle">draft · test · or batch (up to 3)</text>
 
   <rect class="cmd" x="440" y="40" width="160" height="64" rx="10"/>
   <text class="t" x="520" y="66" text-anchor="middle">/lscs-devsecops:pr</text>
@@ -69,12 +69,34 @@
   <text class="n" x="420" y="152" text-anchor="middle">↺ Changes requested, or a criterion fails at close: back to <tspan font-weight="700">Work</tspan>.</text>
   <text class="n" x="420" y="174" text-anchor="middle">⏸ Waiting on a review: <tspan font-weight="700">end</tspan> the session; the next <tspan font-weight="700">start</tspan> picks it up.</text>
 
+  <!-- teammates' PRs lane -->
+  <line x1="40" y1="322" x2="800" y2="322" stroke="#d0d7de" stroke-dasharray="4 4"/>
+  <text class="t" x="40" y="350">Teammates' PRs</text>
+  <text class="s" x="40" y="368">any session</text>
+
+  <rect class="cmd" x="240" y="336" width="160" height="64" rx="10"/>
+  <text class="t" x="320" y="362" text-anchor="middle">/lscs-devsecops:review</text>
+  <text class="s" x="320" y="381" text-anchor="middle">read-only drafts · spot-check</text>
+
+  <rect class="act" x="440" y="336" width="160" height="64" rx="10"/>
+  <text class="t" x="520" y="362" text-anchor="middle">Post the review</text>
+  <text class="s" x="520" y="381" text-anchor="middle">you click Approve</text>
+  <rect class="you" x="553" y="325" width="58" height="20" rx="10"/>
+  <text class="s" x="582" y="339" text-anchor="middle" font-weight="700">your OK</text>
+
+  <rect class="team" x="640" y="336" width="160" height="64" rx="10"/>
+  <text class="t" x="720" y="362" text-anchor="middle">Author follows up</text>
+  <text class="s" x="720" y="381" text-anchor="middle">new commits: delta review</text>
+
+  <path class="ln" d="M400,368 H438"/>
+  <path class="ln" d="M600,368 H638"/>
+
   <!-- legend -->
-  <rect class="cmd" x="40" y="318" width="12" height="12" rx="3"/>
-  <text class="l" x="58" y="328">plugin command</text>
-  <rect class="you" x="160" y="318" width="12" height="12" rx="3"/>
-  <text class="l" x="178" y="328">you decide</text>
-  <rect class="team" x="262" y="318" width="12" height="12" rx="3"/>
-  <text class="l" x="280" y="328">your reviewers</text>
-  <text class="l" x="800" y="328" text-anchor="end">The safety rules apply at every step.</text>
+  <rect class="cmd" x="40" y="428" width="12" height="12" rx="3"/>
+  <text class="l" x="58" y="438">plugin command</text>
+  <rect class="you" x="160" y="428" width="12" height="12" rx="3"/>
+  <text class="l" x="178" y="438">you decide</text>
+  <rect class="team" x="262" y="428" width="12" height="12" rx="3"/>
+  <text class="l" x="280" y="438">teammates</text>
+  <text class="l" x="800" y="438" text-anchor="end">The safety rules apply at every step.</text>
 </svg>
