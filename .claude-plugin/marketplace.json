@@ -1,6 +1,6 @@
 {
   "name": "lscs",
-  "owner": { "name": "Enzo-user" },
+  "owner": { "name": "aq7zo" },
   "description": "Claude Code plugins for LSCS (dlsu-lscs) DevSecOps work.",
   "plugins": [
     {
