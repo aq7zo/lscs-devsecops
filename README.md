@@ -35,7 +35,7 @@ It isn't meant for general frontend or backend work. The conventions apply to ev
 
 Each session starts with `start` and ends with `end`. A ticket goes around the loop until every acceptance criterion is proven. A PR waiting on review carries over, and the next session's `start` picks it up. Teammates' PRs run on their own lane through `review`, in any session.
 
-![The session loop: start, work the ticket, pr proposal (your OK), team review, merge (your OK), close, end, then back to start next session. Changes requested or a failed criterion go back to work; a PR waiting on review carries over to the next session. Below, teammates' PRs: review drafts reviews in parallel, you post them and click Approve.](assets/session-loop.svg)
+![The session loop: start, batch (work 1–3 tickets), pr proposal (your OK), team review, merge (your OK), close, end, then back to start next session. Changes requested or a failed criterion go back to batch; a PR waiting on review carries over to the next session. Below, teammates' PRs: review drafts reviews in parallel, you post them and click Approve.](assets/session-loop.svg)
 
 > [!IMPORTANT]
 > Nothing is pushed, merged or posted for you without your OK. The safety rules apply whether or not a command is running.
