@@ -1,7 +1,7 @@
 {
   "name": "lscs-devsecops",
-  "version": "0.6.0",
-  "description": "For LSCS DevSecOps work: always-on safety rules, the LSCS contribution conventions, and a ticket notebook (start, batch, pr, close, end) for DevSecOps engineers and their tickets.",
+  "version": "0.7.0",
+  "description": "For LSCS DevSecOps work: always-on safety rules, the LSCS contribution conventions, and a ticket notebook (start, batch, review, pr, close, end) for DevSecOps engineers and their tickets.",
   "author": { "name": "aq7zo" },
   "repository": "https://github.com/aq7zo/lscs-devsecops",
   "license": "MIT",

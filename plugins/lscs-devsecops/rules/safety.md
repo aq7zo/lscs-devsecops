@@ -2,7 +2,7 @@
 
 These rules apply whenever you work on a dlsu-lscs repository, or in a notes repo for LSCS tickets. They hold for the whole session, whether or not a skill is loaded. The user's own CLAUDE.md may add stricter rules; where they differ, the user's rules win.
 
-Procedures live in skills: `/lscs-devsecops:start` (session start), `batch` (several tickets in parallel through subagents, which never act on GitHub), `conventions` (LSCS rules for branches, commits, PRs, CI), `pr` (push, PR, review, merge), `close` (verify and close a ticket), `end` (session end). Project facts (org, repos, branches, who holds which role) are in the user's CLAUDE.md under `## LSCS project facts`. Ask for any that are missing; never guess them.
+Procedures live in skills: `/lscs-devsecops:start` (session start), `batch` (several tickets in parallel through subagents, which never act on GitHub), `review` (teammates' PRs in parallel through read-only subagents; Claude never approves), `conventions` (LSCS rules for branches, commits, PRs, CI), `pr` (push, PR, review, merge), `close` (verify and close a ticket), `end` (session end). Project facts (org, repos, branches, who holds which role) are in the user's CLAUDE.md under `## LSCS project facts`. Ask for any that are missing; never guess them.
 
 ## Who does what
 | Tier | Rule | Examples |

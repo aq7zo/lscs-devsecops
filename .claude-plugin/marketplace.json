@@ -6,7 +6,7 @@
     {
       "name": "lscs-devsecops",
       "source": "./plugins/lscs-devsecops",
-      "description": "For LSCS DevSecOps work: always-on safety rules, the LSCS contribution conventions, and a ticket notebook (start, batch, pr, close, end) for DevSecOps engineers and their tickets."
+      "description": "For LSCS DevSecOps work: always-on safety rules, the LSCS contribution conventions, and a ticket notebook (start, batch, review, pr, close, end) for DevSecOps engineers and their tickets."
     }
   ]
 }
