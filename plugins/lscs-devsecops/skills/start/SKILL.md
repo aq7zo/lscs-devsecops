@@ -15,8 +15,8 @@ Run steps 1–5 every session, also when the user's prompt names other work. If 
 ```
 ## LSCS project facts
 - Org: dlsu-lscs · Me: <GitHub handle> · My role: <admin | write | ...> on <repos>
-- Repos: <owner/repo> (dev `<development | dev>`, staging `staging`, default `main` | trunk `main`); ...
-- Reviewers: Senior DevSecOps <handle>; Project Tech Lead <handle>; <other role> <handle>
+- Repos, one line each:
+  - <owner/repo>: dev `<development | dev>`, staging `staging`, default `main` (or trunk `main`) · Senior DevSecOps <handle> · Project Tech Lead <handle> · <other role> <handle>
 - Tickets: title prefix <[DEVOPS]> · issue type <Task> · branch names <devops/<N>-<slug>>
 - Tools: GitHub via <gh | GitHub MCP> · browser tool <name | none> · can't run here: <Docker, ...>
 ```
@@ -28,8 +28,9 @@ Top to bottom. Facts carry the date they were checked; treat older ones as stale
 Search open issues with `is:open assignee:<me> org:<org>` (`gh search issues`, or the GitHub MCP `search_issues`). Compare the results with the HANDOFF queue.
 
 **Not in the queue: intake it.** Only reads on GitHub and local files.
-1. Screenshot the issue page if the facts list a browser tool: `Tickets/<REPO>-<N>-<slug>.png`. Otherwise quote the body in the MD and mark the screenshot pending.
-2. Copy `Tickets/TEMPLATE.md` to `Tickets/<REPO>-<N>-<slug>.md`. Fill in the issue facts, the body and acceptance criteria verbatim, *Needs before start*, and the priority with its reason. Diagnosis and plan may stay TODO.
+0. Its repo has no line in the project facts: ask the user for that repo's branch flow, Senior DevSecOps and Project Tech Lead in one message, and add the line. Never guess or copy them from another repo.
+1. Screenshot the issue page if the facts list a browser tool: `Tickets/<repo>/<N>-<slug>.png`. Otherwise quote the body in the MD and mark the screenshot pending.
+2. Copy `Tickets/TEMPLATE.md` to `Tickets/<repo>/<N>-<slug>.md`, where `<repo>` is the GitHub repo name (one folder per repo; create it if missing). Fill in the issue facts, the body and acceptance criteria verbatim, *Needs before start*, and the priority with its reason. Diagnosis and plan may stay TODO.
 3. The same ticket filed in two repos (same title, author and day): a full MD for one, differences only in the sibling.
 4. Add the row to the queue.
 

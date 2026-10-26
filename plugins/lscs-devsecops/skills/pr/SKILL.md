@@ -21,7 +21,7 @@ Every step here that writes to GitHub is Tier 3 in the safety rules: it happens 
 - **Repo, and base ← branch.** Base: the one the ticket names, else the dev branch, or the trunk in a trunk repo (`conventions`). Branch: as the project facts say, else `<type>/<issue>-<slug>`.
 - **Title:** Conventional Commits.
 - **Exact body:** the repo's PR template, covering the CCG §8 minimums (summary and linked issue, how it was verified, risk/impact, deployment notes). Missing sections: take them from [pr-template.md](../conventions/pr-template.md). *Notes for reviewers*: 5 bullets or fewer. Use `Refs #N` instead of `Closes #N` when the merge should not close the issue.
-- **Reviewers:** from the project facts, per `conventions`. CI/CD workflow changes need the Senior DevSecOps.
+- **Reviewers:** from the repo's line in the project facts, per `conventions`. CI/CD workflow changes need the Senior DevSecOps.
 - **Files:** each file with its +/− lines.
 
 On the OK, push and open the PR exactly as shown. If a tool can't push to the org repo, commit in the clone and run `git push -u origin <branch>` from there.

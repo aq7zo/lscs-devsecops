@@ -69,7 +69,7 @@ Project scope keeps the rules out of your non-LSCS projects. Start a new session
 ### First run: the ticket notebook
 
 1. Make a **private** GitHub repo for your notes (for example `<you>/lscs-notes`), clone it, open Claude Code there and install the plugin as above.
-2. Run `/lscs-devsecops:start`. It reads your handle from the logged-in GitHub account, asks for the rest of your project facts (repos and branches, reviewers by role, ticket naming, your tools), writes them to `CLAUDE.md`, and creates `HANDOFF.md` and `Tickets/`.
+2. Run `/lscs-devsecops:start`. It reads your handle from the logged-in GitHub account, asks for the rest of your project facts (repos and branches, reviewers by role, ticket naming, your tools), writes them to `CLAUDE.md`, and creates `HANDOFF.md` and `Tickets/`, with one folder per GitHub repo.
 3. Every session after that: `/lscs-devsecops:start`, work, `/lscs-devsecops:end`.
 
 If you only want the conventions and safety rules, install the plugin in the product repo and skip the notebook skills.

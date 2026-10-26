@@ -3,7 +3,7 @@
 **Status:** TODO · intake YYYY-MM-DD (Session N) · <one line: where it stands, what happens next>
 **Priority:** <rank> of <open tickets> · <the rule that placed it, e.g. "3. dependency: <other ticket> needs this"> · checked YYYY-MM-DD
 **Issue:** <url> · by <author> · assigned <assignees> · labels <labels> · type <type> · milestone <milestone or none> · created YYYY-MM-DD
-**Screenshot:** `<REPO>-<N>-<slug>.png` (taken YYYY-MM-DD, or pending)
+**Screenshot:** `<N>-<slug>.png` (taken YYYY-MM-DD, or pending)
 **Sibling:** <the same ticket in another repo, whose MD lists differences only; or none>
 **Delivery:** files in `deliverables/<repo>/…` (or: settings only, no files) · branch `<branch>` off `<base>` · PR proposal OK'd YYYY-MM-DD · PR <url, or not opened>
 
@@ -36,7 +36,7 @@ TODO
 TODO. Numbered steps; mark each step's owner (Claude, <me>, team).
 
 ## Verification
-| Acceptance item | Evidence (run / commit / API URL, date) | Screenshot (`evidence/`) |
+| Acceptance item | Evidence (run / commit / API URL, date) | Screenshot (`evidence/<repo>/`) |
 |---|---|---|
 
 Closing checklist (`/lscs-devsecops:close`):
@@ -44,7 +44,7 @@ Closing checklist (`/lscs-devsecops:close`):
 - [ ] every acceptance item tested live; evidence above; screenshots shown to me
 - [ ] boxes ticked on the issue · evidence comment <url>
 - [ ] closed as completed (or by its PR) · YYYY-MM-DD
-- [ ] `evidence/<REPO>-<N>-test-report.pdf` built and checked; shared with the team
+- [ ] `evidence/<repo>/<N>-test-report.pdf` built and checked; shared with the team
 
 ## Log
 - YYYY-MM-DD: intake (Session N).
