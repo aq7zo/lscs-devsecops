@@ -8,14 +8,14 @@ description: Start an LSCS DevSecOps ticket session from a notes repo - read HAN
 Run steps 1–5 every session, also when the user's prompt names other work. If a step can't run, or the user says to skip it, say which and why, and note it in the session log. This skill only reads GitHub; it writes nothing there.
 
 ## 0. First run
-- `CLAUDE.md` has no `## LSCS project facts` section: ask the user for every line of the block below in one message, then write it into `CLAUDE.md`. Never guess a value.
+- `CLAUDE.md` has no `## LSCS project facts` section: ask the user for every line of the block below in one message, then write it into `CLAUDE.md`. Never guess a value. *Me* is the logged-in account (`gh api user --jq .login`, or the GitHub MCP `get_me`): fill it in and ask the user to confirm it.
 - No `HANDOFF.md`: create it from [handoff.md](handoff.md). No `Tickets/`: create it and copy [ticket.md](ticket.md) to `Tickets/TEMPLATE.md`.
 - Not a git repo: suggest `git init` and a private GitHub repo for the notes. The notes are what survives between sessions.
 
 ```
 ## LSCS project facts
 - Org: dlsu-lscs · Me: <GitHub handle> · My role: <admin | write | ...> on <repos>
-- Repos: <owner/repo> (dev `<development | dev>`, staging `staging`, default `main`); ...
+- Repos: <owner/repo> (dev `<development | dev>`, staging `staging`, default `main` | trunk `main`); ...
 - Reviewers: Senior DevSecOps <handle>; Project Tech Lead <handle>; <other role> <handle>
 - Tickets: title prefix <[DEVOPS]> · issue type <Task> · branch names <devops/<N>-<slug>>
 - Tools: GitHub via <gh | GitHub MCP> · browser tool <name | none> · can't run here: <Docker, ...>

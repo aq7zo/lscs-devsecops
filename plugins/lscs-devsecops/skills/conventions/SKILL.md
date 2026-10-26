@@ -13,6 +13,7 @@ Summarized from the LSCS **Code Contribution Guidelines V2.1.0** (CCG) and **CQA
 - dev is shared integration, staging the release candidate, main the production source.
 - dev, staging and main are protected: PRs, relevant status checks, a qualified approval, blocking conversations resolved, no direct or force pushes. main gets the strongest protection.
 - Keep working branches short-lived.
+- Trunk repos (the project facts say `trunk <branch>`): no dev or staging. Working branches target the trunk through a PR, squash-merged; there are no promotion PRs. The trunk gets main's protection. A deviation from CCG §6: record who decided it in the facts.
 
 ## Names and commits (CCG §7)
 - Short branch names tied to the issue: `feature/42-google-auth`, `fix/57-expired-session`, `refactor/61-auth-service`, `docs/70-deployment-guide`, `hotfix/92-login-outage`. Use the prefix in the project facts if one is set (e.g. `devops/<N>-<slug>`).
